@@ -2,7 +2,7 @@ package SDA.PodswawyProgJava.zaj20210213.ZadDomowe.gra;
 
 import static SDA.PodswawyProgJava.zaj20210213.ZadDomowe.gra.MainGra.*;
 
-public class Shotgun  {
+public class Shotgun extends Weapon {
 
 
     public static void shot() {
