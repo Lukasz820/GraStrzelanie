@@ -6,7 +6,7 @@ import static SDA.PodswawyProgJava.zaj20210213.ZadDomowe.gra.MainGra.healthPoint
 
 public class MainGra {
     protected static int healthPoint=100;
-    static int money=900;
+    static int money=2900;
     static int level=0;
 
     public static void main(String[] args) {
@@ -29,7 +29,7 @@ public class MainGra {
             }
             case 2:{
                 if (money<1000){
-                    System.out.println("Nie stać Cię, wybierz inną broń");
+                    System.out.println("Nie stać Cię, na strzelbę");
                     level--;
                     displayMoney();
                     break;
@@ -38,7 +38,17 @@ public class MainGra {
                     Shotgun.shot();
                     break;
                 }
-
+            }
+            case 3:{
+                if (money<3000){
+                    System.out.println("Nie stać Cię na karabin");
+                    level--;
+                    displayMoney();
+                    break;
+                } else
+                    money-=3000;
+                    MachineGun.shot();
+                    break;
             }
         }
     }

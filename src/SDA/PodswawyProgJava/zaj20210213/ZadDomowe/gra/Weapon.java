@@ -8,8 +8,10 @@ import static SDA.PodswawyProgJava.zaj20210213.ZadDomowe.gra.MainGra.money;
 public abstract class Weapon {
 
 
+
+
     public static boolean distance(){
-        
+
         return new Random().nextBoolean();//true - mały dystans
     }
     public static boolean hit(){
